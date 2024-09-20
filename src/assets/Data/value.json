@@ -1,0 +1,17 @@
+[
+    {
+      "icon": "HiShieldCheck",
+      "heading": "Our Vision",
+      "detail": "To empower individuals through world-class education, fostering knowledge, innovation, and leadership for a brighter future."
+    },
+    {
+      "icon": "MdSchool",
+      "heading": "Our Mission",
+      "detail": "To provide quality education that inspires students to reach their full potential, equipping them with the skills and knowledge needed to excel in their careers and contribute to society."
+    },
+    {
+      "icon": "MdLightbulb",
+      "heading": "Core Values",
+      "detail": "We are committed to excellence, inclusivity, and integrity in education, ensuring every student has the tools to succeed in an ever-evolving world."
+    }
+  ]

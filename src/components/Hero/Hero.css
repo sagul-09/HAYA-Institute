@@ -1,0 +1,136 @@
+.hero-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  height: 100vh; 
+  width: 100%;
+  overflow: hidden; 
+  color: white;
+}
+
+.hero-container {
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  gap: 15rem;
+}
+
+/* left side */
+.hero-left {
+  gap: 3rem;
+  z-index: 2; 
+}
+
+.hero-title {
+  position: relative;
+  z-index: 2; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.hero-quote{
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.hero-title > h1 {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 4rem;
+}
+
+.flexhero-des {
+  position: relative;
+  z-index: 2; 
+}
+
+.stats {
+  position: relative;
+  z-index: 2; 
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 253, 253, 1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+
+  color: black;
+}
+
+.hero-right {
+  position: relative;
+  z-index: 2; 
+}
+
+.image-container {
+  position: relative;
+  z-index: 2;  
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.stat > :nth-child(1) > :last-child {
+  color: orange;
+}
+
+/* mobile screens */
+@media (max-width: 640px) {
+  .hero-container {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-title > h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .image-container {
+    width: 95%;
+    height: 10rem;
+  }
+  .stats {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* tablet screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-container {
+    gap: 5rem;
+  }
+  .hero-title > h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .image-container {
+    width: 25rem;
+    height: 30rem;
+  }
+  .stats {
+    gap: 2rem;
+  }
+}
+
+/* desktop screens */
+@media (min-width: 1025px) {
+  .hero-container {
+    gap: 10rem;
+  }
+  .hero-title > h1 {
+    font-size: 3.8rem;
+    line-height: 4rem;
+  }
+  .image-container {
+    width: 30rem;
+    height: 35rem;
+  }
+  .stats {
+    gap: 3rem;
+  }
+}

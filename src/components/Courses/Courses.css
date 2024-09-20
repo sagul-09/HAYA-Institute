@@ -1,0 +1,117 @@
+/* General styles */
+.course-wrapper {
+  padding-top: 6rem; /* Adjust this value as needed to prevent overlap with the navbar */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+
+}
+.search-bar {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+.course-wrapper h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Container for the cards */
+.course-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Wrapper for the cards */
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Adjust the gap between cards as needed */
+  justify-content: center; /* Center the cards */
+}
+
+/* Card styles */
+.MuiCard-root {
+  max-width: 345px;
+  margin: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+}
+
+.MuiCardContent-root {
+  flex-grow: 1;
+}
+
+.MuiCardActions-root {
+  justify-content: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .course-wrapper {
+    padding-top: 5rem; /* Adjust this value as needed to prevent overlap with the navbar */
+  }
+
+  .course-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .card-wrapper {
+    gap: 1.5rem;
+  }
+
+  .MuiCard-root {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-wrapper {
+    padding-top: 4rem; /* Adjust this value as needed to prevent overlap with the navbar */
+  }
+
+  .course-wrapper h1 {
+    font-size: 1.75rem;
+  }
+
+  .card-wrapper {
+    gap: 1.5rem;
+  }
+
+  .MuiCard-root {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-wrapper {
+    padding-top: 3rem; /* Adjust this value as needed to prevent overlap with the navbar */
+  }
+
+  .course-wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-wrapper {
+    gap: 1rem;
+  }
+
+  .MuiCard-root {
+    max-width: 100%;
+    margin: 0.5rem;
+  }
+}
