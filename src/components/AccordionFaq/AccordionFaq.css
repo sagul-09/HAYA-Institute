@@ -1,0 +1,11 @@
+
+
+.faq-title {
+  margin-bottom: 20px; /* Add margin to create a gap */
+  color: purple;
+}
+
+.faq-cards {
+  display: flex;
+  flex-direction: column;
+}

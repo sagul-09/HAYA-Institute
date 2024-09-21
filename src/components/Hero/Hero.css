@@ -27,11 +27,17 @@
   position: relative;
   z-index: 2; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-weight: bolder;
 }
 .hero-quote{
+  font-weight: bolder;
   position: relative;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  background-color: rgba(255, 253, 253, 0.5);
+  color: black;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .hero-title > h1 {
@@ -46,6 +52,7 @@
 }
 
 .stats {
+  font-weight: bolder;
   position: relative;
   z-index: 2; 
   border-radius: 1rem;
@@ -76,6 +83,13 @@
 
 .stat > :nth-child(1) > :last-child {
   color: orange;
+}
+
+.phone-banner{
+  width: 100%;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
 }
 
 /* mobile screens */

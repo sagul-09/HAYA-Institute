@@ -6,9 +6,9 @@ import valueLogo from '/Value.png';
 import data from "../../assets/Data/value.json";
 
 const iconMap = {
-  HiShieldCheck: <HiShieldCheck />,
-  MdSchool: <MdSchool />,
-  MdLightbulb: <MdLightbulb />
+  HiShieldCheck: <HiShieldCheck className="icon-style" />, // Use className for styling
+  MdSchool: <MdSchool className="icon-style" />, // Use className for styling
+  MdLightbulb: <MdLightbulb className="icon-style" /> // Use className for styling
 };
 
 const Value = () => {
@@ -36,8 +36,10 @@ const Value = () => {
           <div className="card-container">
             {data.map((item, index) => (
               <div key={index} className="card">
-                <div className="icon">{iconMap[item.icon]}</div>
-                <h3 className="card-title">{item.heading}</h3>
+                <div className="icon-heading">
+                  <div className="icon">{iconMap[item.icon]}</div>
+                  <h3 className="card-title">{item.heading}</h3>
+                </div>
                 <p className="card-description">{item.detail}</p>
               </div>
             ))}

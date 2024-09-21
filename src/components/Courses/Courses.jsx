@@ -25,12 +25,12 @@ const Courses = () => {
 
   return (
     <div className="course-wrapper">
-      <h1 className="pinkText">Courses Provided</h1>
+      <h1 className="pinkText course-title">Courses Provided</h1>
       <TextField
         id="outlined-basic"
-        label="Search courses"
         variant="outlined"
         value={searchQuery}
+        placeholder="Search for courses"
         onChange={handleSearch}
         className="search-bar"
         InputProps={{

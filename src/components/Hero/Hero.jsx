@@ -3,12 +3,14 @@ import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import Background from "../BackgroundSlider/BackgroundSlider"
 import Logo from '/logo.svg';
-
+import CallIcon from '@mui/icons-material/Call';
 const Hero = () => {
   return (
     <section className="hero-wrapper">
       <Background />
+
       <div className="paddings innerWidth flexCenter hero-container">
+           
         {/* left side */}
         <div className="flexColStart hero-left">
           <div className="hero-title">
@@ -69,6 +71,9 @@ const Hero = () => {
           >
             <img src={Logo} alt="houses" />
           </motion.div>
+        </div>
+        <div className="phone-banner">
+          <h2><CallIcon/>+91 878678788</h2>
         </div>
       </div>
     </section>

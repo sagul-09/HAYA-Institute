@@ -10,8 +10,11 @@
   gap: 2rem;
 
 }
+.course-title{
+  padding: 1rem;
+}
 .search-bar {
-    width: 80%;
+    width: 86%;
     margin-bottom: 20px;
   }
 
@@ -77,6 +80,9 @@
   .MuiCard-root {
     max-width: 300px;
   }
+  .search-bar {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -94,6 +100,9 @@
 
   .MuiCard-root {
     max-width: 280px;
+  }
+  .search-bar {
+    width: 100%;
   }
 }
 
@@ -113,5 +122,8 @@
   .MuiCard-root {
     max-width: 100%;
     margin: 0.5rem;
+  }
+  .search-bar {
+    width: 100%;
   }
 }

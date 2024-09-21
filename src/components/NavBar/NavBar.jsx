@@ -17,7 +17,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from '/logo.svg';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About','Internationl Studnets', 'Course', 'Contact'];
+const navItems = ['Home', 'About', 'International-students', 'Course', 'Contact'];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -60,7 +60,7 @@ function DrawerAppBar(props) {
             <MenuIcon />
           </IconButton>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-           <a href="/"><Box component="img" src={Logo} alt="Logo" sx={{ height: 40 }} /></a> 
+            <a href="/"><Box component="img" src={Logo} alt="Logo" sx={{ height: 40 }} /></a>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'none' }, justifyContent: 'center' }}>
             <Box component="img" src={Logo} alt="Logo" sx={{ height: 40 }} />

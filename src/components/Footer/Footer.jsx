@@ -20,16 +20,16 @@ const Footer = () => {
               Quick Links
             </Typography>
             <Link href="/" color="inherit" underline="none" display="block">
-              Home
+              - Home
             </Link>
             <Link href="/course" color="inherit" underline="none" display="block">
-              Courses
+              - Courses
             </Link>
             <Link href="/about" color="inherit" underline="none" display="block">
-              About
+              - About
             </Link>
             <Link href="/contact" color="inherit" underline="none" display="block">
-              Contact
+              - Contact
             </Link>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>

@@ -11,7 +11,7 @@ export default class BackgroundSlider extends Component {
   render() {
     return (
       <div className="background-slider">
-        <BackgroundSlideshow images={[image1, image2, image3, image4, image5]} animationDelay={1000} />
+        <BackgroundSlideshow images={[image1, image2, image3, image4, image5]} animationDelay={2000} />
       </div>
     );
   }

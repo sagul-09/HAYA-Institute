@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "What programs does the institute offer?",
+    "answer": "Our institute offers a variety of programs including undergraduate, postgraduate, and diploma courses in fields such as engineering, business, arts, and sciences."
+  },
+  {
+    "id": 2,
+    "question": "What are the admission requirements?",
+    "answer": "Admission requirements vary by program. Generally, you will need to provide academic transcripts, standardized test scores, and letters of recommendation. Specific requirements can be found on our admissions page."
+  },
+  {
+    "id": 3,
+    "question": "What is the application process?",
+    "answer": "The application process involves submitting an online application form, paying the application fee, and providing the required documents. Detailed instructions are available on our website."
+  },
+  {
+    "id": 4,
+    "question": "Are there any scholarships available?",
+    "answer": "Yes, we offer a range of scholarships based on academic merit, financial need, and other criteria. You can find more information on our scholarships page."
+  },
+  {
+    "id": 5,
+    "question": "What facilities are available on campus?",
+    "answer": "Our campus is equipped with state-of-the-art facilities including libraries, laboratories, sports complexes, and student housing. We also have various student clubs and organizations."
+  },
+  {
+    "id": 6,
+    "question": "How can I contact the institute for more information?",
+    "answer": "You can contact us via email at info@institute.edu or call us at (123) 456-7890. Our office hours are Monday to Friday, 9 AM to 5 PM."
+  }
+]

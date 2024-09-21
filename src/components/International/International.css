@@ -1,0 +1,125 @@
+.inter-wrapper{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  height: 100vh; 
+  width: 100%;
+  overflow: hidden; 
+  color: white;
+}
+.inter-hero-wrapper {
+    height: 100vh; 
+    width: 100%;
+    background-image: url(../../assets/International/bg.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+  .inter-container {
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    gap: 15rem;
+  }
+  
+  /* left side */
+  .inter-left {
+    gap: 3rem;
+    z-index: 2; 
+  }
+  
+  .inter-title {
+    position: relative;
+    z-index: 2; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    font-weight: bolder;
+  }
+  .inter-quote{
+    font-weight: bolder;
+    position: relative;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    background-color: rgba(255, 253, 253, 0.5);
+    color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  
+  .inter-title > h5 {
+    font-weight: 600;
+    font-size: 3.8rem;
+    line-height: 4rem;
+  }
+  
+  .flexinter-des {
+    position: relative;
+    z-index: 2; 
+  }
+  
+  .stats {
+    font-weight: bolder;
+    position: relative;
+    z-index: 2; 
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 253, 253, 1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  
+    color: black;
+  }
+  
+  
+  .stat > :nth-child(1) > :last-child {
+    color: orange;
+  }
+  
+  /* mobile screens */
+  @media (max-width: 640px) {
+    .inter-container {
+      margin-top: 2rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    .inter-title > h1 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+
+    .stats {
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+  
+  /* tablet screens */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .inter-container {
+      gap: 5rem;
+    }
+    .inter-title > h1 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    .stats {
+      gap: 2rem;
+    }
+  }
+  
+  /* desktop screens */
+  @media (min-width: 1025px) {
+    .inter-container {
+      gap: 10rem;
+    }
+    .inter-title > h1 {
+      font-size: 3.8rem;
+      line-height: 4rem;
+    }
+
+    .stats {
+      gap: 3rem;
+    }
+  }
