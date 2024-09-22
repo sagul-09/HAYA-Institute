@@ -73,7 +73,7 @@ const Hero = () => {
           </motion.div>
         </div>
         <div className="phone-banner">
-          <h2><CallIcon/>+91 878678788</h2>
+        <CallIcon/><h2>+91 878678788</h2>
         </div>
       </div>
     </section>

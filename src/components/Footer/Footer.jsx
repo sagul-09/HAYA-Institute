@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 const Footer = () => {
   return (
-    <Box sx={{ bgcolor: "purple", color: "white", py: 6 }}>
+    <Box sx={{ bgcolor: "rgb(74, 0, 88)", color: "white", py: 6 }}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
@@ -22,7 +22,7 @@ const Footer = () => {
             <Link href="/" color="inherit" underline="none" display="block">
               - Home
             </Link>
-            <Link href="/course" color="inherit" underline="none" display="block">
+            <Link href="/courses" color="inherit" underline="none" display="block">
               - Courses
             </Link>
             <Link href="/about" color="inherit" underline="none" display="block">
