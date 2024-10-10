@@ -1,6 +1,7 @@
 [
     {
       "id": 1,
+      "image": "./courseImages/iot.jpg",
       "courseName": "Mathematics 6",
       "courseCode": "MATH-6",
       "description": "Comprehensive course covering basic arithmetic, fractions, decimals, and introduction to geometry.",
@@ -10,6 +11,26 @@
     },
     {
       "id": 2,
+      "image": "./courseImages/iot.jpg",
+      "courseName": "Mathematics 6",
+      "courseCode": "MATH-6",
+      "description": "Comprehensive course covering basic arithmetic, fractions, decimals, and introduction to geometry.",
+      "detailedDescription": "This course provides a solid foundation in arithmetic, including the use of fractions and decimals, while introducing basic geometric concepts.",
+      "feeStructure": "$500",
+      "grade": 6
+    },
+    {
+      "id": 3,
+      "image": "./courseImages/iot.jpg",
+      "courseName": "Mathematics 6",
+      "courseCode": "MATH-6",
+      "description": "Comprehensive course covering basic arithmetic, fractions, decimals, and introduction to geometry.",
+      "detailedDescription": "This course provides a solid foundation in arithmetic, including the use of fractions and decimals, while introducing basic geometric concepts.",
+      "feeStructure": "$500",
+      "grade": 6
+    },
+    {
+      "id": 4,
       "courseName": "Mathematics 7",
       "courseCode": "MATH-7",
       "description": "Advanced course building on Mathematics 6, focusing on integers, ratios, proportions, and basic algebra concepts.",
@@ -18,7 +39,7 @@
       "grade": 7
     },
     {
-      "id": 3,
+      "id": 5,
       "courseName": "Pre-Algebra GT",
       "courseCode": "PRE-ALG-GT",
       "description": "A gifted and talented course that prepares students for high school algebra with a focus on advanced topics in mathematics.",
@@ -27,7 +48,7 @@
       "grade": 7
     },
     {
-      "id": 4,
+      "id": 6,
       "courseName": "Mathematics 8",
       "courseCode": "MATH-8",
       "description": "Exploration of functions, geometry, and statistics.",
@@ -36,7 +57,7 @@
       "grade": 8
     },
     {
-      "id": 5,
+      "id": 7,
       "courseName": "Algebra I",
       "courseCode": "ALG-I",
       "description": "Introduction to algebra, focusing on solving equations and graphing linear functions.",
@@ -45,60 +66,22 @@
       "grade": 9
     },
     {
-      "id": 6,
+      "id": 8,
       "courseName": "Geometry G",
       "courseCode": "GEOM-G",
       "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
       "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
       "feeStructure": "$700",
       "grade": 9
+    },
+    {
+      "id": 9,
+      "image": "./courseImages/iot.jpg",
+      "courseName": "Mathematics zozoz",
+      "courseCode": "MATH-00",
+      "description": "Comprehensive course covering basic arithmetic, fractions, decimals, and introduction to geometry.",
+      "detailedDescription": "This course provides a solid foundation in arithmetic, including the use of fractions and decimals, while introducing basic geometric concepts.",
+      "feeStructure": "$500",
+      "grade": 6
     }
   ]
-  
-
-
-
-
-  [
-    {
-            "id": 1,
-            "courseName": "Mathematics 1",
-            "courseCode": "MATH-1",
-            "description": "Introduction to numbers, basic addition and subtraction.",
-            "detailedDescription": "Students will learn to identify and write numbers, as well as perform basic addition and subtraction operations.",
-            "feeStructure": "$200"
-          },
-    {
-            "id": 2,
-            "courseName": "Mathematics 2",
-            "courseCode": "MATH-2",
-            "description": "Building on addition and subtraction with introduction to basic shapes.",
-            "detailedDescription": "This course reinforces addition and subtraction skills while introducing students to basic geometric shapes and their properties.",
-            "feeStructure": "$200"
-          },
-         {
-            "id": 3,
-            "courseName": "Mathematics 3",
-            "courseCode": "MATH-3",
-            "description": "Focus on multiplication and division, fractions, and basic measurements.",
-            "detailedDescription": "Students will learn multiplication and division, understand the concept of fractions, and explore basic measurement techniques.",
-            "feeStructure": "$300"
-          },
-          {
-            "id": 4,
-            "courseName": "Mathematics 4",
-            "courseCode": "MATH-4",
-            "description": "Introduction to decimals, advanced fractions, and basic geometry.",
-            "detailedDescription": "This course covers decimals and advanced fraction concepts, along with an introduction to geometric figures and their attributes.",
-            "feeStructure": "$300"
-          },
-         {
-            "id": 5,
-            "courseName": "Mathematics 5",
-            "courseCode": "MATH-5",
-            "description": "Advanced operations with whole numbers and fractions, and introduction to data.",
-            "detailedDescription": "This course focuses on advanced operations with whole numbers and fractions, and introduces students to basic data handling and interpretation.",
-            "feeStructure": "$400"
-          }
-        
-        ]

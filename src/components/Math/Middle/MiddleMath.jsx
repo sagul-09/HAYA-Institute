@@ -1,4 +1,4 @@
-import "./PrimaryMath.css";
+import "./MiddleMath.css";
 import React, { useEffect, useState } from 'react';
 import MultiActionAreaCardWithDialog from '../../CourseCard/Card.jsx';
 import coursesData from "../../../assets/Data/coursesData/Maths/PrimaryMath.json"; // Import the JSON data
@@ -6,7 +6,7 @@ import TextField from '@mui/material/TextField'; // Import TextField from Materi
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import InputAdornment from '@mui/material/InputAdornment'; // Import InputAdornment from Material-UI
 
-const Courses = () => {
+const MiddleMathCourses = () => {
   const [courses, setCourses] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -23,9 +23,18 @@ const Courses = () => {
     course.courseName.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  // Group courses by grade
+  const groupedCourses = filteredCourses.reduce((acc, course) => {
+    if (!acc[course.grade]) {
+      acc[course.grade] = [];
+    }
+    acc[course.grade].push(course);
+    return acc;
+  }, {});
+
   return (
     <div className="course-wrapper">
-      <h1 className="pinkText course-title">Primary School Math</h1>
+      <h1 className="pinkText course-title">Middle School Math Courses</h1>
       <TextField
         id="outlined-basic"
         variant="outlined"
@@ -42,19 +51,26 @@ const Courses = () => {
         }}
       />
       <div className="course-container">
-        {filteredCourses.map((course) => (
-          <MultiActionAreaCardWithDialog
-            key={course.id}
-            title={course.courseName}
-            description={course.description}
-            image={course.image} // Assuming image is part of the course data
-            detailedDescription={course.detailedDescription} // Assuming detailedDescription is part of the course data
-            feeStructure={course.feeStructure}
-          />
+        {Object.keys(groupedCourses).map((grade) => (
+          <div key={grade} className="grade-section">
+            <h2 className="grade-title">Grade {grade}</h2>
+            <div className="grade-courses">
+              {groupedCourses[grade].map((course) => (
+                <MultiActionAreaCardWithDialog
+                  key={course.id}
+                  title={course.courseName}
+                  description={course.description}
+                  detailedDescription={course.detailedDescription}
+                  feeStructure={course.feeStructure}
+                  image={course.image} 
+                />
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </div>
   );
 };
 
-export default Courses;
+export default MiddleMathCourses;

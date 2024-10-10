@@ -7,7 +7,7 @@ import Contact from './components/Contact/Contact';
 import Course from './components/Courses/Courses';
 import Footer from './components/Footer/Footer';
 import International from './components/International/International';
-import MiddleSchoolMath from './components/Math/Primary/PrimaryMath'; // Correct import
+import MiddleSchoolMath from './components/Math/Middle/MiddleMath'; // Correct import
 
 function App() {
   return (

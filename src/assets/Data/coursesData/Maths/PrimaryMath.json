@@ -2,6 +2,7 @@
     {
       "id": 1,
       "courseName": "Mathematics 6",
+       "image": "/courseImages/iot.jpg",
       "courseCode": "MATH-6",
       "description": "Comprehensive course covering basic arithmetic, fractions, decimals, and introduction to geometry.",
       "detailedDescription": "This course provides a solid foundation in arithmetic, including the use of fractions and decimals, while introducing basic geometric concepts.",
@@ -10,43 +11,148 @@
     },
     {
       "id": 2,
-      "courseName": "Mathematics 7",
+      "courseName": "Mathematics 6A",
+      "image": "/courseImages/iot.jpg",
       "courseCode": "MATH-7",
       "description": "Advanced course building on Mathematics 6, focusing on integers, ratios, proportions, and basic algebra concepts.",
       "detailedDescription": "Students will explore integers, ratios, and proportions, and begin their journey into basic algebraic concepts and operations.",
       "feeStructure": "$500",
-      "grade": 7
+      "grade": 6
     },
     {
       "id": 3,
-      "courseName": "Pre-Algebra GT",
+      "courseName": "Pre-Algebra 6",
+      "image": "/courseImages/iot.jpg",
       "courseCode": "PRE-ALG-GT",
       "description": "A gifted and talented course that prepares students for high school algebra with a focus on advanced topics in mathematics.",
       "detailedDescription": "This course provides students with a deeper understanding of algebraic concepts and prepares them for future advanced math courses.",
       "feeStructure": "$600",
-      "grade": 7
+      "grade": 6
     },
     {
       "id": 4,
-      "courseName": "Mathematics 8",
+      "courseName": "Mathematics 7",
+      "image": "/courseImages/iot.jpg",
       "courseCode": "MATH-8",
       "description": "Exploration of functions, geometry, and statistics.",
       "detailedDescription": "This course focuses on the study of functions and their applications, along with an introduction to geometric principles and basic statistics.",
       "feeStructure": "$600",
-      "grade": 8
+      "grade": 7
     },
     {
       "id": 5,
-      "courseName": "Algebra I",
+      "courseName": "Pre-Algebra 7",
+      "image": "/courseImages/iot.jpg",
       "courseCode": "ALG-I",
       "description": "Introduction to algebra, focusing on solving equations and graphing linear functions.",
       "detailedDescription": "Students will learn the foundational concepts of algebra, including solving equations and graphing linear functions on a coordinate plane.",
       "feeStructure": "$700",
-      "grade": 9
+      "grade": 7
     },
     {
       "id": 6,
-      "courseName": "Geometry G",
+      "courseName": "Algebra 7",
+      "image": "/courseImages/iot.jpg",
+      "courseCode": "GEOM-G",
+      "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
+      "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
+      "feeStructure": "$700",
+      "grade": 7
+    },
+    {
+      "id": 7,
+      "courseName": "Pre-Algebra 8",
+      "image": "/courseImages/iot.jpg",
+      "courseCode": "GEOM-G",
+      "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
+      "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
+      "feeStructure": "$700",
+      "grade": 8
+    },
+    {
+      "id": 8,
+      "courseName": "Algebra 8",
+      "image": "/courseImages/iot.jpg",
+      "courseCode": "GEOM-G",
+      "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
+      "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
+      "feeStructure": "$700",
+      "grade": 8
+    },
+    {
+      "id": 9,
+      "courseName": "Geometry 8",
+      "image": "/courseImages/iot.jpg",
+      "courseCode": "GEOM-G",
+      "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
+      "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
+      "feeStructure": "$700",
+      "grade": 8
+    },
+    {
+      "id": 10,
+      "courseName": "Algebra 1",
+      "image": "/courseImages/iot.jpg",
+      "courseCode": "GEOM-G",
+      "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
+      "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
+      "feeStructure": "$700",
+      "grade": 9
+    },
+    {
+      "id": 11,
+      "courseName": "Geometry Course 1",
+      "image": "/courseImages/iot.jpg",
+      "courseCode": "GEOM-G",
+      "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
+      "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
+      "feeStructure": "$700",
+      "grade": 9
+    },
+    {
+      "id": 12,
+      "courseName": "Extended Algebra ",
+      "image": "/courseImages/iot.jpg",
+      "courseCode": "GEOM-G",
+      "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
+      "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
+      "feeStructure": "$700",
+      "grade": 9
+    },
+    {
+      "id": 13,
+      "courseName": "Geometry A",
+      "image": "/courseImages/iot.jpg",
+      "courseCode": "GEOM-G",
+      "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
+      "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
+      "feeStructure": "$700",
+      "grade": 9
+    },
+    {
+      "id": 14,
+      "courseName": "Honors Geometry ",
+      "image": "/courseImages/iot.jpg",
+      "courseCode": "GEOM-G",
+      "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
+      "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
+      "feeStructure": "$700",
+      "grade": 9
+    },
+    {
+      "id": 15,
+      "courseName": "Algebra 2A",
+      "image": "/courseImages/iot.jpg",
+      "courseCode": "GEOM-G",
+      "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
+      "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",
+      "feeStructure": "$700",
+      "grade": 9
+    },
+    {
+      "id": 16,
+      "courseName": "Honors Algebra 2A",
+      "image": "/courseImages/iot.jpg",
       "courseCode": "GEOM-G",
       "description": "Study of shapes, sizes, and properties of space, with a focus on geometric principles and proofs.",
       "detailedDescription": "This course covers essential geometric concepts, including the properties of shapes, theorems, and proofs.",

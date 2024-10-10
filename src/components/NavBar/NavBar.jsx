@@ -192,6 +192,7 @@ const NavBar = ({ window }) => {
           </Box>
         </Toolbar>
       </AppBar>
+      
       <Box component="nav">
         <Drawer
           container={container}

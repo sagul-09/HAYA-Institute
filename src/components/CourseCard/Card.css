@@ -14,8 +14,8 @@
 }
 
 .card-root:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgb(74, 0, 88,0.7);
+  
 }
 
 .card-media {
@@ -47,16 +47,17 @@
 }
 
 .card-button {
-  background-color: #007bff;
-  color: #fff;
+  /* background-color: #007bff; */
+  color: rgb(74, 0, 88);
   text-transform: none;
   padding: 8px 16px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  height: 3rem;
 }
 
 .card-button:hover {
-  background-color: #0056b3;
+  background-color: #ff3995;
   color: white;
 }
 
