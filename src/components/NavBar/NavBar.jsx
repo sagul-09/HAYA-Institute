@@ -14,7 +14,6 @@ const NavBar = ({ window }) => {
   const [mobileCoursesOpen, setMobileCoursesOpen] = useState(false);
   const [mathsOpen, setMathsOpen] = useState(false);
   const [englishOpen, setEnglishOpen] = useState(false);
-  const [hindiOpen, setHindiOpen] = useState(false);
   const isMobile = useMediaQuery('(max-width:600px)'); 
   const isDesktop = useMediaQuery('(min-width:600px)');
   const navItems = ['Home', 'About','International-Students', 'Courses', 'Contact'];
@@ -56,9 +55,6 @@ const NavBar = ({ window }) => {
     setEnglishOpen(!englishOpen);
   };
 
-  const handleHindiToggle = () => {
-    setHindiOpen(!hindiOpen);
-  };
 
   const container = window !== undefined ? () => window().document.body : undefined;
 
@@ -85,14 +81,11 @@ const NavBar = ({ window }) => {
                       <ListItemButton component={NavLink} to="/courses/maths/all" sx={{ pl: isMobile ? 8 : 4 }}>
                         All Maths
                       </ListItemButton>
-                      <ListItemButton component={NavLink} to="/courses/maths/math1" sx={{ pl: isMobile ? 8 : 4 }}>
-                        Math 1
+                      <ListItemButton component={NavLink} to="/courses/maths/middle" sx={{ pl: isMobile ? 8 : 4 }}>
+                        Middle School
                       </ListItemButton>
-                      <ListItemButton component={NavLink} to="/courses/maths/math2" sx={{ pl: isMobile ? 8 : 4 }}>
-                        Math 2
-                      </ListItemButton>
-                      <ListItemButton component={NavLink} to="/courses/maths/math3" sx={{ pl: isMobile ? 8 : 4 }}>
-                        Math 3
+                      <ListItemButton component={NavLink} to="/courses/maths/secondary" sx={{ pl: isMobile ? 8 : 4 }}>
+                        Secondary School
                       </ListItemButton>
                     </List>
                   </Collapse>
@@ -104,30 +97,15 @@ const NavBar = ({ window }) => {
                       <ListItemButton component={NavLink} to="/courses/english/all" sx={{ pl: isMobile ? 8 : 4 }}>
                         All English
                       </ListItemButton>
-                      <ListItemButton component={NavLink} to="/courses/english/n1" sx={{ pl: isMobile ? 8 : 4 }}>
-                        N1
+                      <ListItemButton component={NavLink} to="/courses/english/middle" sx={{ pl: isMobile ? 8 : 4 }}>
+                        Middle School
                       </ListItemButton>
-                      <ListItemButton component={NavLink} to="/courses/english/n2" sx={{ pl: isMobile ? 8 : 4 }}>
-                        N2
-                      </ListItemButton>
-                    </List>
-                  </Collapse>
-                  <ListItemButton onClick={handleHindiToggle} sx={{ pl: isMobile ? 4 : 2 }}>
-                    Hindi <ExpandMoreIcon />
-                  </ListItemButton>
-                  <Collapse in={hindiOpen} timeout="auto" unmountOnExit>
-                    <List component="div" disablePadding>
-                      <ListItemButton component={NavLink} to="/courses/hindi/all" sx={{ pl: isMobile ? 8 : 4 }}>
-                        All Hindi
-                      </ListItemButton>
-                      <ListItemButton component={NavLink} to="/courses/hindi/h1" sx={{ pl: isMobile ? 8 : 4 }}>
-                        H1
-                      </ListItemButton>
-                      <ListItemButton component={NavLink} to="/courses/hindi/h2" sx={{ pl: isMobile ? 8 : 4 }}>
-                        H2
+                      <ListItemButton component={NavLink} to="/courses/english/secondary" sx={{ pl: isMobile ? 8 : 4 }}>
+                        Secondary School
                       </ListItemButton>
                     </List>
                   </Collapse>
+        
                 </List>
               </Collapse>
             </React.Fragment>
@@ -191,25 +169,17 @@ const NavBar = ({ window }) => {
                     </MenuItem>
                     <Collapse in={mathsOpen} timeout="auto" unmountOnExit>
                       <MenuItem component={NavLink} to="/courses/maths/all" onClick={handleMenuClose} sx={{pl: 4}}>All Maths</MenuItem>
-                      <MenuItem component={NavLink} to="/courses/maths/math1" onClick={handleMenuClose} sx={{pl: 4}}>Math 1</MenuItem>
-                      <MenuItem component={NavLink} to="/courses/maths/math2" onClick={handleMenuClose} sx={{pl: 4}}>Math 2</MenuItem>
-                      <MenuItem component={NavLink} to="/courses/maths/math3" onClick={handleMenuClose} sx={{pl: 4}}>Math 3</MenuItem>
+                      <MenuItem component={NavLink} to="/courses/maths/middle" onClick={handleMenuClose} sx={{pl: 4}}>Middle School</MenuItem>
+                      <MenuItem component={NavLink} to="/courses/maths/secondary" onClick={handleMenuClose} sx={{pl: 4}}>Secondary School</MenuItem>
+
                     </Collapse>
                     <MenuItem onClick={handleEnglishToggle}>
                       English <ExpandMoreIcon />
                     </MenuItem>
                     <Collapse in={englishOpen} timeout="auto" unmountOnExit>
                       <MenuItem component={NavLink} to="/courses/english/all" onClick={handleMenuClose} sx={{pl: 4}}>All English</MenuItem>
-                      <MenuItem component={NavLink} to="/courses/english/n1" onClick={handleMenuClose} sx={{pl: 4}}>N1</MenuItem>
-                      <MenuItem component={NavLink} to="/courses/english/n2" onClick={handleMenuClose} sx={{pl: 4}}>N2</MenuItem>
-                    </Collapse>
-                    <MenuItem onClick={handleHindiToggle}>
-                      Hindi <ExpandMoreIcon />
-                    </MenuItem>
-                    <Collapse in={hindiOpen} timeout="auto" unmountOnExit>
-                      <MenuItem component={NavLink} to="/courses/hindi/all" onClick={handleMenuClose} sx={{pl: 4}}>All Hindi</MenuItem>
-                      <MenuItem component={NavLink} to="/courses/hindi/h1" onClick={handleMenuClose} sx={{pl: 4}}>H1</MenuItem>
-                      <MenuItem component={NavLink} to="/courses/hindi/h2" onClick={handleMenuClose} sx={{pl: 4}}>H2</MenuItem>
+                      <MenuItem component={NavLink} to="/courses/english/middle" onClick={handleMenuClose} sx={{pl: 4}}>Middle School</MenuItem>
+                      <MenuItem component={NavLink} to="/courses/english/secondary" onClick={handleMenuClose} sx={{pl: 4}}>Secondary School</MenuItem>
                     </Collapse>
                   </Menu>
                 </React.Fragment>

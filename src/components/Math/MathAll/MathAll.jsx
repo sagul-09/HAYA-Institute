@@ -1,4 +1,4 @@
-import "./Courses.css";
+// import "./Courses.css";
 import React, { useEffect, useState } from 'react';
 import MultiActionAreaCardWithDialog from '../CourseCard/Card.jsx';
 import coursesData from "../../assets/Data/coursesData/Maths/MathData.json"; // Import the JSON data
@@ -11,18 +11,19 @@ const Courses = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    // Flatten the nested structure
+    // Flatten the nested structure for primarySchool only
     const flattenedCourses = [];
-    Object.keys(coursesData).forEach(schoolLevel => {
-      Object.keys(coursesData[schoolLevel]).forEach(grade => {
-        const course = coursesData[schoolLevel][grade];
-        flattenedCourses.push({
-          ...course,
-          grade,
-          schoolLevel
+    if (coursesData.primarySchool) {
+      Object.keys(coursesData.primarySchool.grades).forEach(grade => {
+        coursesData.primarySchool.grades[grade].forEach(course => {
+          flattenedCourses.push({
+            ...course,
+            grade,
+            schoolLevel: 'primarySchool'
+          });
         });
       });
-    });
+    }
     setCourses(flattenedCourses);
   }, []);
 

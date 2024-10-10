@@ -1,7 +1,7 @@
-import "./Courses.css";
+import "./PrimaryMath.css";
 import React, { useEffect, useState } from 'react';
-import MultiActionAreaCardWithDialog from '../CourseCard/Card.jsx';
-import coursesData from "../../assets/Data/coursesData/Maths/MathData.json"; // Import the JSON data
+import MultiActionAreaCardWithDialog from '../../CourseCard/Card.jsx';
+import coursesData from "../../../assets/Data/coursesData/Maths/PrimaryMath.json"; // Import the JSON data
 import TextField from '@mui/material/TextField'; // Import TextField from Material-UI
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import InputAdornment from '@mui/material/InputAdornment'; // Import InputAdornment from Material-UI
@@ -11,19 +11,8 @@ const Courses = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    // Flatten the nested structure
-    const flattenedCourses = [];
-    Object.keys(coursesData).forEach(schoolLevel => {
-      Object.keys(coursesData[schoolLevel]).forEach(grade => {
-        const course = coursesData[schoolLevel][grade];
-        flattenedCourses.push({
-          ...course,
-          grade,
-          schoolLevel
-        });
-      });
-    });
-    setCourses(flattenedCourses);
+    // Set the courses directly from the JSON data
+    setCourses(coursesData);
   }, []);
 
   const handleSearch = (event) => {
@@ -36,7 +25,7 @@ const Courses = () => {
 
   return (
     <div className="course-wrapper">
-      <h1 className="pinkText course-title">Courses Provided</h1>
+      <h1 className="pinkText course-title">Primary School Math</h1>
       <TextField
         id="outlined-basic"
         variant="outlined"
@@ -53,9 +42,9 @@ const Courses = () => {
         }}
       />
       <div className="course-container">
-        {filteredCourses.map((course, index) => (
+        {filteredCourses.map((course) => (
           <MultiActionAreaCardWithDialog
-            key={index}
+            key={course.id}
             title={course.courseName}
             description={course.description}
             image={course.image} // Assuming image is part of the course data

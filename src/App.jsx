@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact';
 import Course from './components/Courses/Courses';
 import Footer from './components/Footer/Footer';
 import International from './components/International/International';
+import MiddleSchoolMath from './components/Math/Primary/PrimaryMath'; // Correct import
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses" element={<Course />} />
+          <Route path="/courses/maths/middle" element={<MiddleSchoolMath />} /> 
           <Route path="/international-students" element={<International />} />
         </Routes>
       </Router>

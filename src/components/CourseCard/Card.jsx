@@ -5,7 +5,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
-import CardActions from '@mui/material/CardActions';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
@@ -24,7 +23,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-export default function MultiActionAreaCard({ title, description, image, detailedDescription, feeStructure }) {
+const MultiActionAreaCardWithDialog = ({ title, description, image, detailedDescription, feeStructure }) => {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -35,34 +34,34 @@ export default function MultiActionAreaCard({ title, description, image, detaile
   };
 
   return (
-    <Card className="card-root">
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          className="card-media"
-          image={image}
-          alt={title}
-        />
-        <CardContent className="card-content">
-          <Typography gutterBottom variant="h5" component="div">
-            {title}
-          </Typography>
-          <Typography variant="body2" component="p">
-            {description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions className="card-actions">
+    <>
+      <Card className="card-root">
+        <CardActionArea onClick={handleClickOpen}>
+          <CardMedia
+            component="img"
+            className="card-media"
+            image={image}
+            alt={title}
+          />
+          <CardContent className="card-content">
+            <Typography gutterBottom variant="h5" component="div">
+              {title}
+            </Typography>
+            <Typography variant="body2" component="p">
+              {description}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
         <Button size="small" color="primary" onClick={handleClickOpen} className="card-button">
           Learn More
         </Button>
-      </CardActions>
+      </Card>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
       >
-        <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
+        <DialogTitle sx={{ m: 0, p: 2 }}>
           {title}
           <IconButton
             aria-label="close"
@@ -82,7 +81,7 @@ export default function MultiActionAreaCard({ title, description, image, detaile
             {detailedDescription}
           </Typography>
           <Typography gutterBottom>
-           <h3>Fee Structure: {feeStructure}</h3> 
+            <h3>Fee Structure: {feeStructure}</h3>
           </Typography>
         </DialogContent>
         <DialogActions>
@@ -91,6 +90,8 @@ export default function MultiActionAreaCard({ title, description, image, detaile
           </Button>
         </DialogActions>
       </BootstrapDialog>
-    </Card>
+    </>
   );
-}
+};
+
+export default MultiActionAreaCardWithDialog;

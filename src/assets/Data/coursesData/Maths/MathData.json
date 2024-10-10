@@ -1,0 +1,92 @@
+{
+    "primarySchool": {
+      "1": {
+        "courseName": "Mathematics 1",
+        "courseCode": "MATH-1",
+        "description": "Introduction to numbers, basic addition and subtraction.",
+        "detailedDescription": "Students will learn to identify and write numbers, as well as perform basic addition and subtraction operations.",
+        "feeStructure": "$200"
+      },
+      "2": {
+        "courseName": "Mathematics 2",
+        "courseCode": "MATH-2",
+        "description": "Building on addition and subtraction with introduction to basic shapes.",
+        "detailedDescription": "This course reinforces addition and subtraction skills while introducing students to basic geometric shapes and their properties.",
+        "feeStructure": "$200"
+      },
+      "3": {
+        "courseName": "Mathematics 3",
+        "courseCode": "MATH-3",
+        "description": "Focus on multiplication and division, fractions, and basic measurements.",
+        "detailedDescription": "Students will learn multiplication and division, understand the concept of fractions, and explore basic measurement techniques.",
+        "feeStructure": "$300"
+      },
+      "4": {
+        "courseName": "Mathematics 4",
+        "courseCode": "MATH-4",
+        "description": "Introduction to decimals, advanced fractions, and basic geometry.",
+        "detailedDescription": "This course covers decimals and advanced fraction concepts, along with an introduction to geometric figures and their attributes.",
+        "feeStructure": "$300"
+      },
+      "5": {
+        "courseName": "Mathematics 5",
+        "courseCode": "MATH-5",
+        "description": "Advanced operations with whole numbers and fractions, and introduction to data.",
+        "detailedDescription": "Students will tackle more complex operations with whole numbers and fractions, while also learning how to collect, organize, and interpret data.",
+        "feeStructure": "$400"
+      }
+    },
+    "middleSchool": {
+      "6": {
+        "courseName": "Mathematics 6",
+        "courseCode": "MATH-6",
+        "description": "Comprehensive course covering basic arithmetic, fractions, decimals, and introduction to geometry.",
+        "detailedDescription": "This course provides a solid foundation in arithmetic, including the use of fractions and decimals, while introducing basic geometric concepts.",
+        "feeStructure": "$500"
+      },
+      "7": {
+        "courseName": "Mathematics 7",
+        "courseCode": "MATH-7",
+        "description": "Advanced course building on Mathematics 6, focusing on integers, ratios, proportions, and basic algebra concepts.",
+        "detailedDescription": "Students will explore integers, ratios, and proportions, and begin their journey into basic algebraic concepts and operations.",
+        "feeStructure": "$500"
+      },
+      "8": {
+        "courseName": "Mathematics 8",
+        "courseCode": "MATH-8",
+        "description": "Exploration of functions, geometry, and statistics.",
+        "detailedDescription": "This course focuses on the study of functions and their applications, along with an introduction to geometric principles and basic statistics.",
+        "feeStructure": "$600"
+      }
+    },
+    "secondarySchool": {
+      "9": {
+        "courseName": "Algebra I",
+        "courseCode": "ALG-I",
+        "description": "Introduction to algebra, focusing on solving equations and graphing linear functions.",
+        "detailedDescription": "Students will learn the foundational concepts of algebra, including solving equations and graphing linear functions on a coordinate plane.",
+        "feeStructure": "$700"
+      },
+      "10": {
+        "courseName": "Algebra II",
+        "courseCode": "ALG-II",
+        "description": "Advanced algebra concepts including polynomials, rational expressions, and quadratic functions.",
+        "detailedDescription": "This course delves deeper into algebraic concepts, covering polynomials, rational expressions, and solving quadratic equations.",
+        "feeStructure": "$800"
+      },
+      "11": {
+        "courseName": "Pre-Calculus",
+        "courseCode": "PRE-CALC",
+        "description": "Preparation for calculus, covering functions, sequences, and limits.",
+        "detailedDescription": "Students will explore various types of functions, sequences, and the fundamental concepts of limits in preparation for calculus.",
+        "feeStructure": "$900"
+      },
+      "12": {
+        "courseName": "Calculus",
+        "courseCode": "CALC",
+        "description": "Introduction to limits, derivatives, and integrals.",
+        "detailedDescription": "This course introduces the concepts of limits, derivatives, and integrals, forming the foundation for advanced calculus topics.",
+        "feeStructure": "$1000"
+      }
+    }
+  }
