@@ -1,17 +1,16 @@
 import "./MiddleMath.css";
 import React, { useEffect, useState } from 'react';
 import MultiActionAreaCardWithDialog from '../../CourseCard/Card.jsx';
-import coursesData from "../../../assets/Data/coursesData/Maths/PrimaryMath.json"; // Import the JSON data
-import TextField from '@mui/material/TextField'; // Import TextField from Material-UI
+import coursesData from "../../../assets/Data/coursesData/Maths/MiddleMath.json"; 
+import TextField from '@mui/material/TextField'; 
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
-import InputAdornment from '@mui/material/InputAdornment'; // Import InputAdornment from Material-UI
+import InputAdornment from '@mui/material/InputAdornment'; 
 
 const MiddleMathCourses = () => {
   const [courses, setCourses] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    // Set the courses directly from the JSON data
     setCourses(coursesData);
   }, []);
 
@@ -23,7 +22,6 @@ const MiddleMathCourses = () => {
     course.courseName.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // Group courses by grade
   const groupedCourses = filteredCourses.reduce((acc, course) => {
     if (!acc[course.grade]) {
       acc[course.grade] = [];

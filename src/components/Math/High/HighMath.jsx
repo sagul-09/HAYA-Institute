@@ -1,24 +1,74 @@
-import React from 'react';
-import MultiActionAreaCard from './MultiActionAreaCard'; // Assuming this is the correct path
-import { courses } from './Courses'; // Assuming courses is an array of course data
+import "./HighMath.css";
+import React, { useEffect, useState } from 'react';
+import MultiActionAreaCardWithDialog from '../../CourseCard/Card.jsx';
+import coursesData from "../../../assets/Data/coursesData/Maths/MiddleMath.json"; 
+import TextField from '@mui/material/TextField'; 
+import SearchSharpIcon from '@mui/icons-material/SearchSharp';
+import InputAdornment from '@mui/material/InputAdornment'; 
 
-const HighMath = () => {
-  const HighMathCourses = courses.filter(course => course.category === 'Maths' && course.subcategory === 'HighMath');
+const HighMathCourses = () => {
+  const [courses, setCourses] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    setCourses(coursesData);
+  }, []);
+
+  const handleSearch = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const filteredCourses = courses.filter(course =>
+    course.courseName.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const groupedCourses = filteredCourses.reduce((acc, course) => {
+    if (!acc[course.grade]) {
+      acc[course.grade] = [];
+    }
+    acc[course.grade].push(course);
+    return acc;
+  }, {});
 
   return (
-    <div className="card-wrapper">
-      {HighMathCourses.map(course => (
-        <MultiActionAreaCard
-          key={course.id}
-          title={course.title}
-          description={course.description}
-          image={course.image}
-          detailedDescription={course.detailedDescription}
-          feeStructure={course.feeStructure}
-        />
-      ))}
+    <div className="course-wrapper">
+      <h1 className="pinkText course-title">High School Math Courses</h1>
+      <TextField
+        id="outlined-basic"
+        variant="outlined"
+        value={searchQuery}
+        placeholder="Search for courses"
+        onChange={handleSearch}
+        className="search-bar"
+        InputProps={{
+          startAdornment: (
+            <InputAdornment position="start">
+              <SearchSharpIcon />
+            </InputAdornment>
+          ),
+        }}
+      />
+      <div className="course-container">
+        {Object.keys(groupedCourses).map((grade) => (
+          <div key={grade} className="grade-section">
+            <h2 className="grade-title">Grade {grade}</h2>
+            <div className="grade-courses">
+              {groupedCourses[grade].map((course) => (
+                <MultiActionAreaCardWithDialog
+                  key={course.id}
+                  title={course.courseName}
+                  description={course.description}
+                  detailedDescription={course.detailedDescription}
+                  feeStructure={course.feeStructure}
+                  image={course.image} 
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
-export default HighMath;
+export default HighMathCourses;

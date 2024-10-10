@@ -7,7 +7,8 @@ import Contact from './components/Contact/Contact';
 import Course from './components/Courses/Courses';
 import Footer from './components/Footer/Footer';
 import International from './components/International/International';
-import MiddleSchoolMath from './components/Math/Middle/MiddleMath'; // Correct import
+import MiddleSchoolMath from './components/Math/Middle/MiddleMath'; 
+import HighSchoolMath from './components/Math/High/HighMath'; 
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses" element={<Course />} />
           <Route path="/courses/maths/middle" element={<MiddleSchoolMath />} /> 
+          <Route path="/courses/maths/high" element={<HighSchoolMath />} /> 
           <Route path="/international-students" element={<International />} />
         </Routes>
       </Router>

@@ -39,13 +39,13 @@ const MultiActionAreaCardWithDialog = ({ title, description, image, detailedDesc
         className="card-root"
         sx={{
           '&:hover': {
-            backgroundColor: '#fff', // Ensure background color remains white on hover
-          },
+            backgroundColor: '#F2F0EF', // Ensure background color remains white on hover
+          }, backgroundColor: '#',borderRadius: '12px' // Set the background color to white
         }}
       >
         <CardActionArea onClick={handleClickOpen}>
 
-        {image ? (
+             {image ? (
           <CardMedia
             component="img"
             className="card-media"
