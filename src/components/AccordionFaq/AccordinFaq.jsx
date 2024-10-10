@@ -27,8 +27,8 @@ const AccordionSummary = styled((props) => (
     {...props}
   />
 ))(({ theme }) => ({
-  backgroundColor: '#6617cb',
-  backgroundImage: 'linear-gradient(315deg, #cb218e 30%, #4B0082 90%)', // Dark purple to pink gradient
+  backgroundColor: 'rgb(185, 185, 185)',
+  color: 'black',
   borderRadius: '8px 8px 0 0',
   flexDirection: 'row-reverse',
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
@@ -66,7 +66,7 @@ export default function CustomizedAccordions() {
               onChange={handleChange(faq.id)}
             >
               <AccordionSummary aria-controls={`${faq.id}-content`} id={`${faq.id}-header`}>
-                <Typography sx={{ color: 'white' }}>{faq.question}</Typography> {/* Change text color here */}
+                <Typography sx={{ color: 'black', fontWeight: "1rem" }}>{faq.question}</Typography> {/* Change text color here */}
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>{faq.answer}</Typography>
