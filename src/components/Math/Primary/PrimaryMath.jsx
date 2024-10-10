@@ -23,9 +23,18 @@ const PrimaryMathCourses = () => {
     course.courseName.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  // Group courses by grade
+  const groupedCourses = filteredCourses.reduce((acc, course) => {
+    if (!acc[course.grade]) {
+      acc[course.grade] = [];
+    }
+    acc[course.grade].push(course);
+    return acc;
+  }, {});
+
   return (
     <div className="course-wrapper">
-      <h1 className="pinkText course-title">Secondary School Math</h1>
+      <h1 className="pinkText course-title">Middle School Math Courses</h1>
       <TextField
         id="outlined-basic"
         variant="outlined"
@@ -42,19 +51,26 @@ const PrimaryMathCourses = () => {
         }}
       />
       <div className="course-container">
-        {filteredCourses.map((course) => (
-          <MultiActionAreaCardWithDialog
-            key={course.id}
-            title={course.courseName}
-            description={course.description}
-            image={course.image} // Assuming image is part of the course data
-            detailedDescription={course.detailedDescription} // Assuming detailedDescription is part of the course data
-            feeStructure={course.feeStructure}
-          />
+        {Object.keys(groupedCourses).map((grade) => (
+          <div key={grade} className="grade-section">
+            <h2 className="grade-title">Grade {grade}</h2>
+            <div className="grade-courses">
+              {groupedCourses[grade].map((course) => (
+                <MultiActionAreaCardWithDialog
+                  key={course.id}
+                  title={course.courseName}
+                  description={course.description}
+                  detailedDescription={course.detailedDescription}
+                  feeStructure={course.feeStructure}
+                  image={course.image} // Assuming image is part of the course data
+                />
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </div>
   );
 };
 
-export default  PrimaryMathCourses;
+export default PrimaryMathCourses;

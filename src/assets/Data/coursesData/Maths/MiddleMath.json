@@ -55,3 +55,50 @@
     }
   ]
   
+
+
+
+
+  [
+    {
+            "id": 1,
+            "courseName": "Mathematics 1",
+            "courseCode": "MATH-1",
+            "description": "Introduction to numbers, basic addition and subtraction.",
+            "detailedDescription": "Students will learn to identify and write numbers, as well as perform basic addition and subtraction operations.",
+            "feeStructure": "$200"
+          },
+    {
+            "id": 2,
+            "courseName": "Mathematics 2",
+            "courseCode": "MATH-2",
+            "description": "Building on addition and subtraction with introduction to basic shapes.",
+            "detailedDescription": "This course reinforces addition and subtraction skills while introducing students to basic geometric shapes and their properties.",
+            "feeStructure": "$200"
+          },
+         {
+            "id": 3,
+            "courseName": "Mathematics 3",
+            "courseCode": "MATH-3",
+            "description": "Focus on multiplication and division, fractions, and basic measurements.",
+            "detailedDescription": "Students will learn multiplication and division, understand the concept of fractions, and explore basic measurement techniques.",
+            "feeStructure": "$300"
+          },
+          {
+            "id": 4,
+            "courseName": "Mathematics 4",
+            "courseCode": "MATH-4",
+            "description": "Introduction to decimals, advanced fractions, and basic geometry.",
+            "detailedDescription": "This course covers decimals and advanced fraction concepts, along with an introduction to geometric figures and their attributes.",
+            "feeStructure": "$300"
+          },
+         {
+            "id": 5,
+            "courseName": "Mathematics 5",
+            "courseCode": "MATH-5",
+            "description": "Advanced operations with whole numbers and fractions, and introduction to data.",
+            "detailedDescription": "This course focuses on advanced operations with whole numbers and fractions, and introduces students to basic data handling and interpretation.",
+            "feeStructure": "$400"
+          }
+        
+        ]
