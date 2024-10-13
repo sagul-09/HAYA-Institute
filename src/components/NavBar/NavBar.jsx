@@ -26,6 +26,8 @@ const NavBar = ({ window }) => {
     }
   }, [isMobile]);
 
+
+
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };

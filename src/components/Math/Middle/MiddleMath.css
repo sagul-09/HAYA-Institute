@@ -5,8 +5,8 @@
   align-items: center;
   text-align: center;
   gap: 1rem;
+  padding-top: 8rem;
 
-  
 }
 
 .course-title {
@@ -14,7 +14,7 @@
 }
 
 .search-bar {
-  width: 800%;
+  width: 80%;
   margin-bottom: 20px;
 }
 

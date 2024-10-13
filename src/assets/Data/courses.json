@@ -1,18 +1,16 @@
 [
   {
     "id": 1,
-    "title": "Mathamatics",
-    "description": "An introductory course to computer science, covering basic programming concepts and algorithms.",
-    "image": "./courseImages/iot.jpg",
-    "detailedDescription": "This course provides an introduction to the field of computer science. Students will learn about basic programming concepts, algorithms, and data structures. The course also covers the history of computing and the impact of technology on society.",
-    "feeStructure": "$500"
+    "courseName": "Mathematics 1",
+    "courseCode": "MATH-1",
+    "description": "This course covers fundamental mathematical concepts including basic arithmetic operations, fractions, decimals, and introductory geometry. It is designed to build a strong foundation for higher-level math courses."
+ 
   },
   {
     "id": 2,
-    "title": "English",
-    "description": "A comprehensive course on data structures and algorithms, essential for efficient programming.",
-    "image": "/static/images/courses/data-structures.jpg",
-    "detailedDescription": "This course covers fundamental data structures and algorithms used in computer science. Topics include arrays, linked lists, stacks, queues, trees, graphs, sorting algorithms, and searching algorithms. Students will learn how to implement these data structures and algorithms in various programming languages.",
-    "feeStructure": "$600"
+    "courseName": "Mathematics 2",
+    "courseCode": "MATH-2",
+    
+    "description": "This course delves into advanced mathematical topics such as algebra, geometry, trigonometry, and calculus. It aims to prepare students for college-level mathematics and various standardized tests."
   }
 ]

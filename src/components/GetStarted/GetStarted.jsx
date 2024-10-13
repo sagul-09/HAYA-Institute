@@ -3,7 +3,7 @@ import "./GetStarted.css";
 const GetStarted = () => {
   return (
     <div id="get-started" className="g-wrapper">
-      <div className="paddings innerWidth g-container">
+      <div className="paddings innerWidth get-started-container">
         <div className="flexColCenter inner-container">
           <span className="primaryText">Get started with HAYA</span>
           <span className="secondaryText">
