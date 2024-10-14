@@ -11,8 +11,8 @@ const Contact = () => {
   const whatsappNumber = '+91 8667202917'; // Replace with your WhatsApp number (same as phone number if applicable)
 
   return (
-    <div id="contact-us" className="c-wrapper">
-      <div className="paddings innerWidth flexCenter c-container">
+    <div id="contact-us" className="c-wrapper innerWidth flexCenter">
+      <div className="paddings  flexCenter c-container">
         {/* left side */}
         <div className="flexColStart c-left">
           <span className="pinkText">Our Contact Us</span>
