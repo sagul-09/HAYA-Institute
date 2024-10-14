@@ -1,4 +1,4 @@
-import "./MiddleMath.css";
+import "./MiddleEnglish.css";
 import React, { useEffect, useState } from 'react';
 import MultiActionAreaCardWithDialog from '../../CourseCard/Card.jsx';
 import coursesData from "../../../assets/Data/coursesData/Maths/MiddleMath.json"; 
@@ -32,7 +32,7 @@ const MiddleMathCourses = () => {
 
   return (
     <div className="middlemath-course-wrapper">
-      <h1 className="pinkText middlemath-course-title">Middle School Math Courses</h1>
+      <h1 className="pinkText middlemath-course-title">Middle School English Courses</h1>
       <TextField
         id="outlined-basic"
         variant="outlined"

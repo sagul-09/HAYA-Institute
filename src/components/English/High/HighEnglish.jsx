@@ -1,4 +1,4 @@
-import "./MiddleMath.css";
+import "./HighEnglish.css";
 import React, { useEffect, useState } from 'react';
 import MultiActionAreaCardWithDialog from '../../CourseCard/Card.jsx';
 import coursesData from "../../../assets/Data/coursesData/Maths/MiddleMath.json"; 
@@ -6,7 +6,7 @@ import TextField from '@mui/material/TextField';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import InputAdornment from '@mui/material/InputAdornment'; 
 
-const MiddleMathCourses = () => {
+const HighMathCourses = () => {
   const [courses, setCourses] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -31,15 +31,15 @@ const MiddleMathCourses = () => {
   }, {});
 
   return (
-    <div className="middlemath-course-wrapper">
-      <h1 className="pinkText middlemath-course-title">Middle School Math Courses</h1>
+    <div className="course-wrapper">
+      <h1 className="=course-title">High School English Courses</h1>
       <TextField
         id="outlined-basic"
         variant="outlined"
         value={searchQuery}
         placeholder="Search for courses"
         onChange={handleSearch}
-        className="middlemath-search-bar"
+        className="search-bar"
         InputProps={{
           startAdornment: (
             <InputAdornment position="start">
@@ -48,11 +48,11 @@ const MiddleMathCourses = () => {
           ),
         }}
       />
-      <div className="middlemath-course-container">
+      <div className="course-container">
         {Object.keys(groupedCourses).map((grade) => (
-          <div key={grade} className="middlemath-grade-section">
-            <h2 className="middlemath-grade-title">Grade {grade}</h2>
-            <div className="middlemath-grade-courses">
+          <div key={grade} className="grade-section">
+            <h2 className="grade-title">Grade {grade}</h2>
+            <div className="grade-courses">
               {groupedCourses[grade].map((course) => (
                 <MultiActionAreaCardWithDialog
                   key={course.id}
@@ -71,4 +71,4 @@ const MiddleMathCourses = () => {
   );
 };
 
-export default MiddleMathCourses;
+export default HighMathCourses;

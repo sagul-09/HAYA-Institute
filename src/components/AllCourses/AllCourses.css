@@ -1,14 +1,14 @@
 /* Main wrapper for the courses */
-.mathAll-wrapper {
+.allcourses-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
   height: 100vh;
-
 }
-.mathAll-bg{
+
+.allcourses-bg {
   background-image: url('/courseBg.jpg');
   background-size: cover;
   background-position: center;
@@ -16,7 +16,7 @@
 }
 
 /* Title styling */
-.mathAll-title {
+.allcourses-title {
   padding: 1rem;
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -24,7 +24,7 @@
 }
 
 /* Container for the courses */
-.mathAll-container {
+.allcourses-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -33,107 +33,107 @@
 }
 
 /* Individual course cards */
-.mathAll-card {
+.allcourses-card {
   max-width: 345px;
   margin: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  overflow: hidden;
+  overflow: hidden; /* Ensure the content respects the border radius */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
-  border: 5px solid #ff3995; 
+  border: 5px solid #ff3995;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   gap: 1rem;
   height: auto; /* Adjust height for flexibility */
 }
 
-.mathAll-card:hover {
+.allcourses-card:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgb(74, 0, 88,0.7);
-  border: 5px solid rgb(74, 0, 88, 0.7); 
+  border: 5px solid rgb(74, 0, 88, 0.7);
 }
 
 /* Course card media (image) */
-.mathAll-image {
+.allcourses-image {
   width: 100%;
-  height: 200px; /* Adjust image height for consistency */
-  object-fit: cover; /* Ensure the image fits well in the card */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Ensure image corners are rounded */
 }
 
 /* Course card title */
-.mathAll-card-title {
+.allcourses-card-title {
   font-weight: bold;
   color: #333;
 }
 
 /* Course description */
-.mathAll-description {
+.allcourses-description {
   color: #666;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
-  .mathAll-wrapper {
-    /* padding-top: 5rem; */
+  .allcourses-wrapper {
     height: auto; /* Allow auto height for smaller screens */
   }
 
-  .mathAll-title {
+  .allcourses-title {
     margin-top: 2rem;
     font-size: 2rem;
   }
 
-  .mathAll-container {
+  .allcourses-container {
     gap: 15px;
   }
 
-  .mathAll-card {
+  .allcourses-card {
     max-width: 300px;
     height: auto; /* Auto height to handle content overflow */
   }
 }
 
 @media (max-width: 768px) {
-  .mathAll-wrapper {
+  .allcourses-wrapper {
     padding-top: 4rem;
     height: auto; /* Ensure auto height for mobile devices */
   }
 
-  .mathAll-title {
+  .allcourses-title {
     margin-top: 2rem;
     font-size: 2rem;
   }
 
-  .mathAll-card {
+  .allcourses-card {
     max-width: 100%;
     height: auto; /* Full width for mobile and auto height */
   }
 
-  .mathAll-container {
+  .allcourses-container {
     width: 100%;
     gap: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .mathAll-wrapper {
+  .allcourses-wrapper {
     padding-top: 3rem;
     height: auto; /* Set height to auto for smaller screens */
   }
 
-  .mathAll-title {
+  .allcourses-title {
     margin-top: 2rem;
     font-size: 2rem;
   }
 
-  .mathAll-card {
+  .allcourses-card {
     max-width: 100%; /* Full width for mobile view */
     height: auto; /* Auto height for content flexibility */
   }
 
-  .mathAll-container {
+  .allcourses-container {
     width: 100%;
     gap: 8px;
   }
