@@ -1,125 +1,537 @@
-.inter-wrapper{
+/* General Wrapper */
+.inter-wrapper {
   position: relative;
   z-index: 1;
   display: flex;
-  height: 100vh; 
+  flex-direction: column;
   width: 100%;
-  overflow: hidden; 
   color: white;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
 }
+
+/* Hero Image Section */
 .inter-hero-wrapper {
-    height: 100vh; 
-    width: 100%;
-    background-image: url(../../assets/International/bg.jpg);
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-  }
-  
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../assets/International/bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container within Hero Section */
+.inter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 90%;
+  max-width: 1200px;
+  height: 100vh;
+  z-index: 1;
+  gap: 15rem;
+  padding: 0 2rem;
+}
+
+/* Left Side for Title and Quote */
+.inter-left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  z-index: 2;
+}
+
+/* Title Section */
+.inter-title {
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-weight: bolder;
+}
+
+.inter-title h1 {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 4rem;
+}
+
+
+
+/* Quote Section */
+.inter-quote {
+  font-weight: bolder;
+  position: relative;
+  background-color: rgba(255, 253, 253, 0.8);
+  color: black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Additional Description */
+.flexinter-des {
+  position: relative;
+  z-index: 2;
+}
+
+/* Stats Section (if applicable) */
+.stats {
+  font-weight: bolder;
+  position: relative;
+  z-index: 2;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 253, 253, 1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  color: black;
+}
+
+.stat > :nth-child(1) > :last-child {
+  color: orange;
+}
+
+/* Content Section Below the Hero Image */
+.content-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  margin-top: -10px; /* Adjusted to overlap slightly with hero */
+}
+
+/* Hero Section in Content */
+.hero-section h2 {
+  font-size: 2.5rem;
+  color: #800080;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Info Section */
+.info-section {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.info-section p {
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+}
+
+/* Container for Content and Image */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Left Content */
+.left-content {
+  flex: 1;
+}
+
+.left-content h2 {
+  font-size: 2.5rem;
+  color: #800080;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Right Image Box */
+.right-image-box {
+  flex: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.right-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 5px solid #ddd;
+}
+
+/* Left-side Text Below Content Section */
+.left-side {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.left-side h2 {
+  font-size: 2.5rem;
+  color: #800080; /* Changed to purple */
+  margin-bottom: 20px;
+}
+
+.left-side p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Image Section with Second Image */
+.image-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.top-right-image {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px;
+}
+
+.top-image {
+  width: 50%;
+  height: auto;
+  border: 5px solid #ddd;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.image-section .top-right-image::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 60%;
+  width: 35%;
+  height: 100%;
+  background: rgba(255, 165, 0, 0.1);
+  padding: 20px;
+  z-index: -1;
+}
+
+/* Specific Section: HAYA GLOBALISE LEARNING */
+.haya-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px 0;
+  gap: 2rem;
+}
+
+.haya-section .left-side {
+  flex: 1;
+  text-align: left; /* Align text to the left */
+}
+
+.haya-section .image-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.haya-section .left-side h2 {
+  color: purple; /* Ensure the title is purple */
+}
+
+/* Responsive Design */
+
+/* Mobile View */
+@media (max-width: 640px) {
   .inter-container {
-    justify-content: space-around;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .inter-title h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .inter-quote {
+    width: 90%;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .right-image-box {
+    flex: 1;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .right-image {
     width: 100%;
-    height: 100vh;
-    z-index: 1;
-    gap: 15rem;
+    border: none;
   }
-  
-  /* left side */
-  .inter-left {
-    gap: 3rem;
-    z-index: 2; 
+
+  .left-content h2 {
+    font-size: 2rem;
   }
-  
-  .inter-title {
-    position: relative;
-    z-index: 2; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-    font-weight: bolder;
+
+  .left-content p {
+    font-size: 1rem;
   }
-  .inter-quote{
-    font-weight: bolder;
-    position: relative;
-    color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-    background-color: rgba(255, 253, 253, 0.5);
-    color: black;
-    border-radius: 1rem;
-    padding: 1rem;
+
+  .image-section .top-right-image {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .inter-title > h5 {
-    font-weight: 600;
+
+  .image-section .top-right-image::before {
+    display: none;
+  }
+
+  .top-image {
+    width: 100%;
+  }
+
+  .left-side h2 {
+    font-size: 2rem;
+  }
+
+  .left-side p {
+    font-size: 1rem;
+  }
+
+  /* HAYA SECTION Mobile */
+  .haya-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .haya-section .image-section,
+  .haya-section .left-side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .haya-section .left-side h2 {
+    font-size: 2rem;
+  }
+
+  .haya-section .left-side p {
+    font-size: 1rem;
+  }
+
+  .haya-section .top-image {
+    width: 100%;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .inter-container {
+    gap: 5rem;
+  }
+
+  .inter-title h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: left;
+  }
+
+  .inter-quote {
+    width: 70%;
+    font-size: 1.1rem;
+  }
+
+  .content-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .right-image-box {
+    flex: 0.6;
+  }
+
+  .left-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .left-content p {
+    font-size: 1.1rem;
+  }
+
+  .image-section .top-right-image img {
+    max-width: 50%;
+  }
+
+  .image-section .top-right-image::before {
+    left: 55%;
+    width: 40%;
+  }
+
+  .left-side h2 {
+    font-size: 2.2rem;
+  }
+
+  .left-side p {
+    font-size: 1.1rem;
+  }
+
+  /* HAYA SECTION Tablet */
+  .haya-section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .haya-section .left-side {
+    text-align: left;
+  }
+
+  .haya-section .image-section {
+    justify-content: flex-start;
+  }
+
+  .haya-section .left-side h2 {
+    font-size: 2.2rem;
+  }
+
+  .haya-section .left-side p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1025px) {
+  .inter-container {
+    gap: 10rem;
+  }
+
+  .inter-title h1 {
     font-size: 3.8rem;
     line-height: 4rem;
+    text-align: left;
   }
-  
-  .flexinter-des {
-    position: relative;
-    z-index: 2; 
-  }
-  
-  .stats {
-    font-weight: bolder;
-    position: relative;
-    z-index: 2; 
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: rgba(255, 253, 253, 1);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-  
-    color: black;
-  }
-  
-  
-  .stat > :nth-child(1) > :last-child {
-    color: orange;
-  }
-  
-  /* mobile screens */
-  @media (max-width: 640px) {
-    .inter-container {
-      margin-top: 2rem;
-      flex-direction: column;
-      align-items: center;
-    }
-    .inter-title > h1 {
-      font-size: 2.5rem;
-      line-height: 3rem;
-    }
 
-    .stats {
-      justify-content: center;
-      gap: 1rem;
-    }
+  .inter-quote {
+    width: 50%;
+    font-size: 1.2rem;
   }
-  
-  /* tablet screens */
-  @media (min-width: 641px) and (max-width: 1024px) {
-    .inter-container {
-      gap: 5rem;
-    }
-    .inter-title > h1 {
-      font-size: 3rem;
-      line-height: 3.5rem;
-    }
 
-    .stats {
-      gap: 2rem;
-    }
+  .content-section {
+    padding: 50px 20px;
+    margin-top: 50px;
   }
-  
-  /* desktop screens */
-  @media (min-width: 1025px) {
-    .inter-container {
-      gap: 10rem;
-    }
-    .inter-title > h1 {
-      font-size: 3.8rem;
-      line-height: 4rem;
-    }
 
-    .stats {
-      gap: 3rem;
-    }
+  .hero-section h2 {
+    font-size: 2.5rem;
   }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .info-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .content-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .right-image-box {
+    flex: 0.6;
+  }
+
+  .left-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .left-content p {
+    font-size: 1.2rem;
+  }
+
+  .image-section .top-right-image img {
+    max-width: 50%;
+  }
+
+  .image-section .top-right-image::before {
+    left: 60%;
+    width: 35%;
+  }
+
+  .left-side h2 {
+    font-size: 2.5rem;
+  }
+
+  .left-side p {
+    font-size: 1.2rem;
+  }
+
+  /* HAYA SECTION Desktop */
+  .haya-section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .haya-section .left-side {
+    text-align: left;
+  }
+
+  .haya-section .image-section {
+    justify-content: flex-start;
+  }
+
+  .haya-section .left-side h2 {
+    font-size: 2.5rem;
+  }
+
+  .haya-section .left-side p {
+    font-size: 1.2rem;
+  }
+
+  .haya-section .top-image {
+    width: 50%;
+  }
+}

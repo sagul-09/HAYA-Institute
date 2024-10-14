@@ -1,0 +1,236 @@
+
+.about-container {
+  width: 100%; /* Full width */
+  max-width: 1125px; /* Max width */
+  padding: 20px; /* Padding */
+  margin: 0 auto; /* Centered */
+  background-color: #fcfcfc; /* Background color */
+  color: rgb(255, 255, 255); /* Text color */
+}
+
+/* Header Section */
+/* Keyframes for scroll animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Start completely transparent */
+      transform: translateY(-20px); /* Start slightly above */
+  }
+  100% {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Move to original position */
+  }
+}
+
+/* Apply animation to the header */
+.about-header {
+  background-color: #820293; /* Dark background */
+  margin: 0 -20%; /* Adjust margin for mobile */
+  padding: 60px 0; /* Padding */
+  text-align: center; /* Centered text */
+  opacity: 0; /* Start with header hidden */
+  animation: fadeIn 1s forwards; /* Apply animation */
+}
+
+.about-header h1 {
+  color: #fff; /* White text */
+  font-size: 3rem; /* Large font size */
+  margin: 0; /* No margin */
+}
+
+/* Introduction Section */
+.about-introduction {
+  padding: 40px 20px; /* Padding */
+  text-align: center; /* Centered text */
+}
+
+.about-introduction p {
+  font-size: 1.2rem; /* Font size */
+  line-height: 1.6; /* Line height */
+  color: #333; /* Text color */
+}
+
+.about-main-image {
+  width: 100%;
+  
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.about-top-image {
+  position: relative;/* Allow absolute positioning of overlay text */
+  max-width: 1125px; 
+  overflow: hidden; /* Hide overflow if necessary */
+  width: 100%; /* Full width */
+}
+
+/* Fade-in text */
+.fade-in-text {
+  position: absolute; /* Position over the image */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  opacity: 0; /* Start as invisible */
+  animation: fadeIn 1.5s forwards; /* Apply fade-in animation */
+  text-align: center; /* Center text */
+  color: #fff; /* Text color */
+}
+
+/* Expertise Section */
+.about-expertise {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center alignment */
+  justify-content: center; /* Centered content */
+  margin: 40px 0; /* Margin */
+  padding: 20px; /* Padding */
+}
+
+.expertise-content {
+  flex: 1; /* Flexible width */
+  max-width: 50%; /* Maximum width */
+  text-align: center; /* Centered text */
+}
+
+.expertise-content h2 {
+  font-size: 2rem; /* Heading size */
+  color: #820293; /* Heading color */
+  margin-bottom: 20px; /* Margin */
+}
+
+.expertise-content p {
+  font-size: 1.1rem; /* Text size */
+  color: #555; /* Text color */
+  line-height: 1.6; /* Line height */
+}
+
+.about-expertise img {
+  width: 40%; /* Image width */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+/* About Sections */
+.about-section {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center alignment */
+  justify-content: center; /* Centered items */
+  margin: 40px 0; /* Margin */
+  padding: 20px; /* Padding */
+  flex-wrap: wrap; /* Responsive wrapping */
+}
+
+.text-section {
+  flex: 1; /* Flexible width */
+  max-width: 50%; /* Maximum width */
+  padding-right: 20px; /* Space between text and image */
+  text-align: left; /* Left-aligned text */
+}
+
+.text-section h2 {
+  font-size: 2rem; /* Heading size */
+  color: #960276; /* Heading color */
+  margin-bottom: 20px; /* Margin */
+}
+
+.text-section p {
+  font-size: 1.1rem; /* Text size */
+  color: #555; /* Text color */
+  line-height: 1.6; /* Line height */
+}
+
+.about-image {
+  width: 40%; /* Image width */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow */
+  transition: transform 0.7s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition */
+  margin-left: 20px; /* Space between text and image */
+}
+
+.about-image:hover {
+  transform: scale(1.05); /* Scale on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Why Choose Section */
+.about-why-choose {
+  background-color: #f9f9f9; /* Light background */
+  padding: 50px 20px; /* Padding */
+  text-align: center; /* Centered text */
+}
+
+.about-why-choose h2 {
+  font-size: 2.5rem; /* Heading size */
+  color: #820293; /* Heading color */
+  margin-bottom: 40px; /* Margin */
+}
+
+.why-choose-grid {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Centered grid */
+  flex-wrap: wrap; /* Responsive wrapping */
+}
+
+.why-choose-item {
+  width: 30%; /* Item width */
+  padding: 20px; /* Padding */
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+  text-align: center; /* Centered text */
+  margin: 10px; /* Space between items */
+}
+
+.why-choose-item h3 
+{
+  font-size: 1.5rem; /* Heading size */
+  color: #820293; /* Heading color */
+  margin-bottom: 20px; /* Margin */
+}
+
+.why-choose-item p 
+{
+  font-size: 1rem; /* Text size */
+  color: #555; /* Text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-header h1 
+  {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .about-introduction p,
+  .expertise-content p,
+  .text-section p 
+  {
+      font-size: 1rem; /* Adjust font size */
+  }
+
+  .about-expertise img,
+  .about-image 
+  {
+      width: 80%; /* Make images larger on smaller screens */
+  }
+
+  .about-section,
+  .about-expertise
+  {
+
+      flex-direction: column; /* Stack elements vertically */
+  }
+
+  .text-section 
+  {
+      padding-right: 0; /* Remove padding on small screens */
+      text-align: center; /* Center text */
+      max-width: 100%; /* Full width */
+  }
+
+  .why-choose-item 
+  {
+      width: 100%; /* Full width for items on small screens */
+      margin: 10px 0; /* Vertical margin */
+  }
+}
