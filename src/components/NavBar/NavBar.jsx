@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { AppBar, Box, Button, CssBaseline, Drawer, IconButton, List, ListItem, ListItemButton, Menu, MenuItem, Toolbar, Collapse, useMediaQuery } from '@mui/material';
+import { AppBar,Typography, Box, Button, CssBaseline, Drawer, IconButton, List, ListItem, ListItemButton, Menu, MenuItem, Toolbar, Collapse, useMediaQuery } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -193,6 +193,11 @@ const NavBar = ({ window }) => {
             ))}
           </Box>
         </Toolbar>
+        <Box sx={{ backgroundColor: 'purple', color: 'white', textAlign: 'center', padding: '0.5rem'}}>
+  <Typography sx={{ fontSize: { xs: '1rem', sm: '1.5rem' } }}>
+    +91 878678788
+  </Typography>
+</Box>
       </AppBar>
       
       <Box component="nav">

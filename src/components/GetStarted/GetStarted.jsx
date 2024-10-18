@@ -1,6 +1,10 @@
 import React from "react";
 import "./GetStarted.css";
 const GetStarted = () => {
+  const handleGetStartedClick = () => {
+    window.location.href = 'mailto:sagul09112001@gmail.com';
+  };
+
   return (
     <div id="get-started" className="g-wrapper">
       <div className="paddings innerWidth get-started-container">
@@ -11,8 +15,8 @@ const GetStarted = () => {
             <br />
             Mail Us Now
           </span>
-          <button className="button" href>
-            <a href="mailto:sagul09112001@gmail.com">Get Started</a>
+          <button className="button" onClick={handleGetStartedClick}>
+            Get Started
           </button>
         </div>
       </div>

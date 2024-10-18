@@ -49,12 +49,7 @@ const Hero = () => {
               <span className="secondaryText">Happy Students</span>
             </div>
 
-            <div className="flexColCenter stat">
-              <span>
-                <CountUp end={20} /> <span>+</span>
-              </span>
-              <span className="secondaryText">Best Faculties</span>
-            </div>
+         
           </div>
         </div>
 
@@ -72,9 +67,7 @@ const Hero = () => {
             <img src={Logo} alt="houses" />
           </motion.div>
         </div>
-        <div className="phone-banner">
-        <CallIcon/><h2>+91 878678788</h2>
-        </div>
+
       </div>
     </section>
   );
